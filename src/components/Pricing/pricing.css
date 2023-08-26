@@ -1,0 +1,50 @@
+.pricing-container {
+  position: relative;
+  margin-bottom: 2em;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.plans {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5em; */
+  width: 80%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 3fr));
+  justify-items: center;
+  grid-gap: 5em;
+}
+.plans.hebrew {
+  direction: rtl;
+}
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+}
+
+div.pricing-plan {
+  min-width: 15em;
+  width: 10%;
+  box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.1),
+    0px 0px 2px 0px var(--primary);
+  transition: box-shadow 0.5s ease-in-out;
+  border-radius: 20px 20px 10px 10px;
+}
+
+div.pricing-plan.selected {
+  box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.1),
+    0px 0px 2px 0.125em var(--primary);
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+button.pricing-plan-cta {
+  margin-top: 2em;
+  background-color: var(--primary);
+}

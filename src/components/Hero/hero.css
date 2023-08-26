@@ -1,0 +1,58 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  justify-content: center;
+}
+
+.hero-headers {
+  display: flex;
+  flex-direction: column;
+  margin: 4em 0;
+}
+
+.primary-hero-header {
+  align-self: center;
+  align-self: center;
+  font-size: 4em;
+}
+
+.secondary-hero-header {
+  align-self: center;
+  flex: 1;
+  font-size: 1.75em;
+}
+
+.hero-headers .heading {
+  width: 70%;
+  text-align: left;
+  margin: 0;
+}
+
+.hero-cta-container {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+
+button.primary-hero-cta {
+  background-color: var(--primary);
+  color: var(--neutral);
+}
+
+button.secondary-hero-cta {
+  background-color: var(--secondary);
+  color: var(--dark-text);
+}
+
+.primary-hero-header.hebrew {
+  direction: rtl;
+  text-align: right;
+}
+
+.secondary-hero-header.hebrew {
+  direction: rtl;
+  /* text-align: right; */
+}

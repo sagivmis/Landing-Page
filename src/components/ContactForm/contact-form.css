@@ -1,0 +1,47 @@
+div.contact-form-container {
+  background-color: var(--neutral);
+  min-height: 1em;
+  width: 40%;
+  padding: 1em;
+  color: var(--dark-text);
+  display: flex;
+  /* flex-direction: column-reverse; */
+  gap: 1em;
+}
+
+.contact-invite-label {
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 0.075em;
+  margin-bottom: 1em;
+}
+
+label.form-label {
+  flex: 1;
+}
+
+div.input-container {
+  flex: 9;
+}
+
+button.contact-cta {
+  background-color: var(--primary);
+}
+
+button.contact-cta:hover {
+  background-color: var(--primary-lighter);
+}
+
+label.checkbox-label {
+  flex: 20;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 12px;
+  align-self: self-end;
+}
+
+span.checkbox-container {
+  flex: 1;
+  padding: 0;
+  margin-left: -1em;
+}

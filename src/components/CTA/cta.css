@@ -1,0 +1,17 @@
+button.primary-cta {
+  background-color: var(--primary);
+  color: var(--light-text);
+}
+
+button.secondary-cta {
+  background-color: var(--secondary);
+  color: var(--dark-text);
+}
+
+button.secondary-cta:hover {
+  background-color: var(--secondary-darker);
+}
+
+button.primary-cta:hover {
+  background-color: var(--primary-lighter);
+}
