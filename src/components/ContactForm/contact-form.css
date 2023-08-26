@@ -8,7 +8,6 @@ div.contact-form-container {
   /* flex-direction: column-reverse; */
   gap: 1em;
 }
-
 .contact-invite-label {
   font-size: 1.5em;
   font-weight: 600;
