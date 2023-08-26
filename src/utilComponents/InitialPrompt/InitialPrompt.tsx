@@ -1,12 +1,12 @@
 import React, { useState } from "react"
 import "./initial-prompt.css"
-import { Box, Button, Modal, Typography } from "@mui/material"
+import { Box, Modal, Typography } from "@mui/material"
 import CTA from "../../components/CTA"
 
 const InitialPrompt = () => {
   const [open, setOpen] = useState(true)
 
-  const handleOpen = () => setOpen(true)
+  // const handleOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
 
   return (
