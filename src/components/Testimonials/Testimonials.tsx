@@ -1,12 +1,13 @@
-import React from "react"
+import React, { useMemo } from "react"
 import AwesomeSlider from "react-awesome-slider"
 import "react-awesome-slider/dist/styles.css"
 import "./testimonials.css"
-import { Avatar, Card, CardHeader, Rating } from "@mui/material"
+import { Avatar, Card, CardContent, CardHeader, Rating } from "@mui/material"
 import {
   HE_THIRD_NAVIGATION_SECTION,
   THIRD_NAVIGATION_SECTION
 } from "../../config"
+import clsx from "clsx"
 
 export type TestimonyType = {
   clientPhoto: string
@@ -17,26 +18,32 @@ export type TestimonyType = {
 
 interface ITestimony {
   testimony: TestimonyType
+  language: string
 }
 
 const Testimony: React.FC<ITestimony> = (props: ITestimony) => {
-  const { testimony } = props
+  const { testimony, language } = props
+  const isHE = useMemo(() => (language === "en" ? false : true), [])
   return (
-    <div className='testimony-container'>
-      <Card className='testimony'>
-        <Rating
-          name='read-only'
-          className='testimony-rating'
-          value={testimony.rating}
-          readOnly
-        />
-        <CardHeader
-          avatar={<Avatar aria-label='recipe' src={testimony.clientPhoto} />}
-          title={testimony.name}
-          subheader={testimony.quote}
-        />
-      </Card>
-    </div>
+    <Card className='testimony-container'>
+      <Rating
+        name='read-only'
+        className='testimony-rating'
+        value={testimony.rating}
+        readOnly
+      />
+      <CardHeader
+        avatar={<Avatar aria-label='recipe' src={testimony.clientPhoto} />}
+        title={testimony.name}
+        // subheader={}
+        className={clsx("testimony-header paragraph", isHE ? "hebrew" : "")}
+      />
+      <CardContent
+        className={clsx("testimony-content paragraph", isHE ? "hebrew" : "")}
+      >
+        {testimony.quote}
+      </CardContent>
+    </Card>
   )
 }
 interface ITestimonials {
@@ -47,10 +54,10 @@ const Testimonials = (props: ITestimonials) => {
   const { testimonials, language } = props
 
   const slider = (
-    <AwesomeSlider infinite>
+    <AwesomeSlider infinite fillParent>
       {testimonials.map((testimony) => (
-        <div key={testimony.name}>
-          <Testimony testimony={testimony} />
+        <div key={testimony.name} className='testimony-slider-item'>
+          <Testimony testimony={testimony} language={language} />
         </div>
       ))}
     </AwesomeSlider>
