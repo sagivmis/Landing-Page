@@ -1,10 +1,4 @@
-import React, {
-  Dispatch,
-  SetStateAction,
-  forwardRef,
-  useEffect,
-  useState
-} from "react"
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react"
 import "./pricing.css"
 import { Card, CardContent, CardHeader } from "@mui/material"
 import clsx from "clsx"

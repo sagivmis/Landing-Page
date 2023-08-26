@@ -1,8 +1,5 @@
-import React, { forwardRef } from "react"
-import { Card, CardContent, CardHeader, Avatar } from "@mui/material"
-import Money from "../../assets/images/money-48.png"
-import Coins from "../../assets/images/stack-of-coins-48.png"
-import MoneyPig from "../../assets/images/money-box-48.png"
+import React from "react"
+import { Card, CardHeader, Avatar } from "@mui/material"
 import "./features.css"
 import clsx from "clsx"
 import {

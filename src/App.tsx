@@ -19,6 +19,7 @@ import {
 } from "./config"
 
 function App() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [language, setLanguage] = useState<"en" | "he">("he")
 
   return (

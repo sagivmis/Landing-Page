@@ -53,7 +53,6 @@ import {
   THIRD_PRICING_PLAN_TITLE
 } from "./strings"
 
-import Money from "../assets/images/money-48.png"
 import Compatibility from "../assets/images/compatibility-64.png"
 import Access from "../assets/images/access-80.png"
 import Design from "../assets/images/design-80.png"

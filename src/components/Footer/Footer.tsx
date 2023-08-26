@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react"
+import React from "react"
 import "./footer.css"
 import facebookIcon from "../../assets/social/facebook-50.svg"
 import instagramIcon from "../../assets/social/instagram-50.svg"

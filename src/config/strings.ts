@@ -1,5 +1,3 @@
-import { IFeature } from "../components/Features/Features"
-
 export const BUTTON = "button"
 
 export const FIRST_PRICING_PLAN_FEATURES = [

@@ -1,6 +1,6 @@
-import React, { RefObject, useState } from "react"
+import React from "react"
 import logo from "../../logo.svg"
-import { Link, animateScroll as scroll } from "react-scroll"
+import { Link } from "react-scroll"
 import "./navigation.css"
 import CTA from "../CTA"
 import {
